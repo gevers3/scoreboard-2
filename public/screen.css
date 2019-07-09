@@ -7,6 +7,218 @@ html {
 }
 
 body {
-  margin: 0;
-  min-height: 100%;
+  font-family: 'Rokkitt', serif;
+  font-family: 'Roboto', sans-serif;  min-height: 100%;
+  align-items: center;
+  background: url("./images/green-box.svg") repeat ;
+  background-size: 8px 8px;
+}
+
+/* 
+Rokkitt:
+--------
+Thin
+Extra-Light
+Light
+Regular
+Medium
+Semi-Bold
+Bold
+Extra-Bold
+Black 
+*/
+
+body, html {
+  height: 100%;
+}
+
+.logo-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 60%;
+  }
+
+.container {
+  width: auto; 
+  max-width: 1000px; 
+  margin-top: 0%;
+  margin-right: auto; 
+  margin-left: auto; 
+  padding-right: 18px; 
+  padding-left: 18px; 
+  display: flex;
+  flex-flow: row wrap;
+  }
+
+.card-base {
+  width: 100%;
+}
+
+.update {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.add-subtract {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+h1 {
+  text-align: center;
+  color:#1c068c;
+}
+
+.team-1-name, .team-2-name {
+  text-align: center;
+  color:#63440d;
+  font-family: 'Rokkitt', sans-serif;
+  font-weight: 900;
+  font-size: 5rem;
+  margin-top: 8%;
+  margin-bottom: 1%;
+}
+
+p.team-1-score, p.team-2-score {
+  text-align: center;
+  color:#0f725f;
+  font-family: 'Rokkitt', sans-serif;
+  font-weight: 900;
+  font-size: 20rem;
+  margin: -3% 3%;
+  letter-spacing: -.02em;
+}
+
+.teams {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 75%;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0.5rem;
+}
+
+.team h2 {
+  font-size: 2rem;
+}
+
+.team-1-score, .team-2-score {
+  text-align: center;
+  font-size: 5rem;
+}
+
+.quarter-1, .quarter-2, .quarter-3, .quarter-4 {
+  background-color: #0f725f;
+}
+
+.update, .add-subtract {
+  border-radius: 8px;
+  font-size: 1rem;
+  height: 38px;
+  padding: 6px 10px;
+  border: 0px solid #6d6e71;
+  box-shadow: none;
+  flex: 1;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.add-subtract {
+  width:100%;
+}
+
+button {
+  color:#fff;
+  font-family: 'Rokkitt', sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: -.02em;
+  background-color: #0f725f;
+}
+
+.team-1-add-1-button, .team-2-add-1-button {
+margin-right: 1rem;
+}
+
+.team-1-add-1-button, .team-1-subtract-1-button, .team-2-add-1-button, .team-2-subtract-1-button {
+width: 47%;
+}
+
+.team-1-input, .team-2-input {
+  width: 70%;
+  margin-right: 8px;
+}
+
+.update-team-1-name, .update-team-2-name {
+  width: 24%;
+}
+
+.quarters h3 {
+  color:#63440d;
+  font-family: 'Rokkitt', sans-serif;
+  font-weight: 900;
+  font-size: 4rem;
+  text-align: center;
+  margin: 2% 1%;
+  margin-bottom: 1%;
+  letter-spacing: -.02em;
+}
+
+.quarter-numbers {
+  display:flex;
+  flex-flow: row no-wrap;
+  justify-content: center;
+}
+
+.quarter-numbers p {
+  color:#fff;
+  font-family: 'Rokkitt', sans-serif;
+  font-weight: 900;
+  font-size: 4rem;
+  text-align: center;
+  margin: 3% 3%;
+  letter-spacing: -.02em;
+  padding: 2rem;
+}
+
+@media (min-width: 544px) { 
+  .card-768px {
+    width: 100%;
+  padding: 0 16px; 
+  margin-bottom: 40px;
+  }
+  .logo-image {
+    width: 50%;
+    }
+}
+
+@media (min-width: 768px) { 
+  .card-768px {
+  width: 45%;
+  padding: 0 16px; 
+  margin-bottom: 40px;
+  }
+  .logo-image {
+    width: 25%;
+    }
+}
+
+@media (min-width: 1280px) { 
+  .card-1280px {
+  width: 46%;
+  padding: 0 16px; 
+  margin-bottom: 40px;
+  }
+  .container {
+    margin-top: 3%;
+  }
 }

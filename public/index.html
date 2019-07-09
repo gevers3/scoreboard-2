@@ -1,13 +1,111 @@
 <!DOCTYPE html>
 <html>
-  <head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>scoreboard-2</title>
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/screen.css">
-  </head>
-  <body>
-    <h1 class='hello-world'>Hello, World!</h1>
-  </body>
+
+<head lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scoreboard</title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/screen.css" />
+  <link href="https://fonts.googleapis.com/css?family=Rokkitt:100,200,300,400,500,600,700,800,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="logo">
+    <img class="logo-image" src="./images/scoreboard-logo.svg" alt="scoreboard logo">
+  </div>
+
+
+  <!-- <h1>My Score Board</h1> -->
+
+  <div class="container">
+
+
+    <section class="card-base card-544px card-768px card-1280px">
+
+      <h1 class="team-1-name">TEAM 1</h1>
+      <p class="team-1-score">10</p>
+
+      <section class="update">
+        <!--update team 1 name -->
+        <input type="text" class="team-1-input" />
+        <button class="update-team-1-name">UPDATE</button>
+      </section>
+
+      <section class="add-subtract">
+        <!-- update team 1 score -->
+        <button class="team-1-add-1-button">ADD 1</button>
+        <button class="team-1-subtract-1-button">SUBTRACT 1</button>
+      </section>
+
+    </section>
+
+    <section class="card-base card-544px card-768px card-1280px">
+
+      <h1 class="team-2-name">TEAM 2</h1>
+      <p class="team-2-score">10</p>
+
+      <section class="update">
+        <!-- update team 2 name -->
+        <input type="text" class="team-2-input" />
+        <button class="update-team-2-name">UPDATE</button>
+      </section>
+
+
+      <section class="add-subtract">
+        <!-- update team 2 score -->
+        <button class="team-2-add-1-button">ADD 1</button>
+        <button class="team-2-subtract-1-button">SUBTRACT 1</button>
+      </section>
+
+    </section>
+
+
+  </div> <!-- closes container div-->
+
+  <section class="quarters">
+    <h3>
+      UPDATE GAME QUARTER
+    </h3>
+    <section class="quarter-numbers">
+      <p class="quarter-1">1</p>
+      <p class="quarter-2">2</p>
+      <p class="quarter-3">3</p>
+      <p class="quarter-4">4</p>
+
+    </section>
+
+  </section>
+
+
+
+  <!--
+
+    <section class="update-quarter">
+
+      <section>
+        <button class="update-quarter">UPDATE QUARTER</button>
+        <input type="text" class="team-1-input-quarter" />
+      </section>
+
+      <section>
+        <button class="team-1-next-quarter">NEXT</button>
+        <button class="team-1-previous-quarter">PREVIOUS</button>
+      </section>
+
+    </section>
+
+    -->
+
+  </section> <!-- closes teams-->
+
+  <script src="/main.js" charset="utf-8"></script>
+
+</body>
+
 </html>
